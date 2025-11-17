@@ -118,17 +118,17 @@ http://localhost:4000
 
 # 💡 Features
 
-✅ Node.js + Express (ES6 modules)
-✅ MongoDB + Mongoose CRUD operations
-✅ JWT Authentication (Register/Login)
-✅ User Roles → Admin / User
-✅ Redis caching (Optional)
-✅ Celebrate (Joi) input validation
-✅ Proper MVC architecture
-✅ Logger (Morgan + Winston)
-✅ Global error handler
-✅ Docker support (API + MongoDB + Redis)
-✅ In-memory MongoDB for tests
+    ✅ Node.js + Express (ES6 modules)
+    ✅ MongoDB + Mongoose CRUD operations
+    ✅ JWT Authentication (Register/Login)
+    ✅ User Roles → Admin / User
+    ✅ Redis caching (Optional)
+    ✅ Celebrate (Joi) input validation
+    ✅ Proper MVC architecture
+    ✅ Logger (Morgan + Winston)
+    ✅ Global error handler
+    ✅ Docker support (API + MongoDB + Redis)
+    ✅ In-memory MongoDB for tests
 
 # 🛡 Security Layer
 
