@@ -134,13 +134,13 @@ http://localhost:4000
 
 Includes:
 
-🔐 JWT Authentication
-📌 Password hashing (bcryptjs)
-🛡 Helmet security headers
-🚫 Rate limiting
-⛔ CORS configuration
-🚫 XSS-clean filtering
-📦 Sanitized requests
+    🔐 JWT Authentication
+    📌 Password hashing (bcryptjs)
+    🛡 Helmet security headers
+    🚫 Rate limiting
+    ⛔ CORS configuration
+    🚫 XSS-clean filtering
+    📦 Sanitized requests
 
 # 📌 API Endpoints
 
