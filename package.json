@@ -1,0 +1,29 @@
+{
+  "name": "megamart",
+  "version": "1.0.0",
+  "description": "MegaMart - learning project for MongoDB (CRUD -> Advanced)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+  "start": "node --env-file=.env server.js",
+  "dev": "nodemon --env-file=.env server.js",
+    "seed": "node scripts/seed.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "celebrate": "^15.0.1",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "mongodb-memory-server": "^8.12.1",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.4"
+  }
+}
