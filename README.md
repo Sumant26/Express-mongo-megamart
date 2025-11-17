@@ -7,84 +7,84 @@ This project is designed for developers who want to learn MongoDB from beginner 
 This project demonstrates how professional APIs are built, including:
 
 # Project Structure
-express-mongo-megamart/
-│
-├── package.json                     # Project metadata & dependencies
-├── server.js                        # App entry point
-├── .env                             # Environment variables
-├── .gitignore
-│
-├── logs/                            # Central Winston logs
-│   ├── info.log
-│   ├── error.log
-│   └── .gitkeep
-│
-├── docs/                            # API documentation (Swagger/Postman)
-│   └── megamart.postman_collection.json
-│
-├── tests/                           # Jest + Supertest tests (In-memory MongoDB)
-│   ├── auth.test.js
-│   ├── product.test.js
-│   └── user.test.js
-│
-├── scripts/                         # Developer / DevOps scripts
-│   ├── seed.js                      # Seed DB with sample products/users
-│   └── backup.js                    # MongoDB backup script
-│
-├── docker/
-│   ├── Dockerfile                   # Build container image
-│   └── docker-compose.yml           # Multi-service orchestration (API + Mongo + Redis)
-│
-└── src/
-    ├── app.js                       # Initializes app, middleware, and routes
+    express-mongo-megamart/
     │
-    ├── routes/
-    │   ├── auth.routes.js
-    │   ├── user.routes.js
-    │   ├── product.routes.js
-    │   └── order.routes.js
+    ├── package.json                     # Project metadata & dependencies
+    ├── server.js                        # App entry point
+    ├── .env                             # Environment variables
+    ├── .gitignore
     │
-    ├── controllers/
-    │   ├── auth.controller.js
-    │   ├── user.controller.js
-    │   ├── product.controller.js
-    │   └── order.controller.js
+    ├── logs/                            # Central Winston logs
+    │   ├── info.log
+    │   ├── error.log
+    │   └── .gitkeep
     │
-    ├── models/
-    │   ├── user.model.js
-    │   ├── product.model.js
-    │   └── order.model.js
+    ├── docs/                            # API documentation (Swagger/Postman)
+    │   └── megamart.postman_collection.json
     │
-    ├── validation/                  # Joi validation schemas
-    │   ├── auth.validation.js
-    │   ├── user.validation.js
-    │   └── product.validation.js
+    ├── tests/                           # Jest + Supertest tests (In-memory MongoDB)
+    │   ├── auth.test.js
+    │   ├── product.test.js
+    │   └── user.test.js
     │
-    ├── config/
-    │   ├── db.js                    # MongoDB connection
-    │   ├── redis.js                 # Redis caching (optional)
-    │   ├── logger.js                # Winston logger config
-    │   └── security.js              # Helmet, rate limit, CORS
+    ├── scripts/                         # Developer / DevOps scripts
+    │   ├── seed.js                      # Seed DB with sample products/users
+    │   └── backup.js                    # MongoDB backup script
     │
-    ├── middlewares/
-    │   ├── auth.middleware.js       # JWT authentication
-    │   ├── admin.middleware.js      # Admin role protection
-    │   ├── error.middleware.js      # Global error handler
-    │   └── validate.middleware.js   # Celebrate request validation
+    ├── docker/
+    │   ├── Dockerfile                   # Build container image
+    │   └── docker-compose.yml           # Multi-service orchestration (API + Mongo + Redis)
     │
-    ├── utils/
-    │   ├── token.utils.js           # JWT create/verify helpers
-    │   ├── response.utils.js        # Standard API response formatting
-    │   ├── morgan.utils.js          # Morgan + Winston HTTP logger
-    │   └── cache.utils.js           # Redis cache wrapper
-    │
-    ├── constants/
-    │   └── messages.js              # Centralized success/error messages
-    │
-    └── services/
-        ├── user.service.js
-        ├── product.service.js
-        └── order.service.js         # Business logic only
+    └── src/
+        ├── app.js                       # Initializes app, middleware, and routes
+        │
+        ├── routes/
+        │   ├── auth.routes.js
+        │   ├── user.routes.js
+        │   ├── product.routes.js
+        │   └── order.routes.js
+        │
+        ├── controllers/
+        │   ├── auth.controller.js
+        │   ├── user.controller.js
+        │   ├── product.controller.js
+        │   └── order.controller.js
+        │
+        ├── models/
+        │   ├── user.model.js
+        │   ├── product.model.js
+        │   └── order.model.js
+        │
+        ├── validation/                  # Joi validation schemas
+        │   ├── auth.validation.js
+        │   ├── user.validation.js
+        │   └── product.validation.js
+        │
+        ├── config/
+        │   ├── db.js                    # MongoDB connection
+        │   ├── redis.js                 # Redis caching (optional)
+        │   ├── logger.js                # Winston logger config
+        │   └── security.js              # Helmet, rate limit, CORS
+        │
+        ├── middlewares/
+        │   ├── auth.middleware.js       # JWT authentication
+        │   ├── admin.middleware.js      # Admin role protection
+        │   ├── error.middleware.js      # Global error handler
+        │   └── validate.middleware.js   # Celebrate request validation
+        │
+        ├── utils/
+        │   ├── token.utils.js           # JWT create/verify helpers
+        │   ├── response.utils.js        # Standard API response formatting
+        │   ├── morgan.utils.js          # Morgan + Winston HTTP logger
+        │   └── cache.utils.js           # Redis cache wrapper
+        │
+        ├── constants/
+        │   └── messages.js              # Centralized success/error messages
+        │
+        └── services/
+            ├── user.service.js
+            ├── product.service.js
+            └── order.service.js         # Business logic only
 
 ⚙️ Setup Instructions
 
